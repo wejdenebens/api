@@ -5,6 +5,9 @@ import axios from "axios";
 
 
 const [data, setData] = useState({ listOfUSer : [] });
+
+const UserList = () =>{
+  
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios.get(
@@ -25,3 +28,7 @@ const [data, setData] = useState({ listOfUSer : [] });
     </ul>
   );
 
+}
+
+
+export default UserList
